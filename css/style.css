@@ -23,9 +23,14 @@ ul li{
 
 header{
 	background-color: #3fabf4;
-	height: 120px;
+	height: 5rem;
+
 }
 
+
+.weui-header-left img{
+	max-width: 70%;
+}
 
 .banner{
 	background-image: url(../img/banner_bg.png);
@@ -40,6 +45,16 @@ header{
 
 .banner_s img{
 	width: 100%;
+}
+
+.index_icon{
+	margin: 2em 15px;
+	padding: 2em 1em;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #E3E3E3;
+	-webkit-box-shadow:: 0px 0px 5px #E3E3E3;
+	-moz-box-shadow: 0px 0px 5px #E3E3E3;	
 }
 
 .new_con_titel{
@@ -111,3 +126,27 @@ footer{
 	 border-bottom-left-radius: 10px;
 	 border-bottom-right-radius: 10px;
  }
+
+ .i {
+	stroke: currentColor;
+	stroke-width: 2px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+	width: 1em;
+	height: 1em;
+	margin: 0.4em;
+	color: #fff;
+}
+
+svg, svg symbol {
+	overflow: visible;
+}
+
+.i-large div { font-size: 4em; margin: 0 }
+.i-medium div { font-size: 2em; margin: 0 }
+.i-small div { font-size: 1.5em; margin: 0 }
+
+.i-large,
+.i-medium,
+.i-small { max-width: 50em; margin: 0 auto 2em }

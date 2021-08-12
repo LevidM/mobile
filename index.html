@@ -17,7 +17,16 @@
     <script src="js/zepto.min.js"></script>
     <script src="js/swipe.js"></script>
 	<script src="js/zepto.weui.js"></script>
-    <script src="js/sidebar.js"></script>
+	<!-- SidebarJS Styles -->
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/sidebarjs.min.css">
+	<!-- SidebarJS Scripts -->
+    <script src="js/sidebarjs.min.js"></script>
+	<script type="text/javascript">
+		// SidebarJS Init
+		var sidebarjs = new SidebarJS.SidebarElement({responsive: true, mainContent: document.querySelector('main')});
+	</script>
+
     <script>
         $(function(){
             $('#slide1').swipeSlide({
@@ -47,20 +56,10 @@
                     me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
                 }
             });
-            $('#slide3').swipeSlide({
-                autoSwipe:true,//自动切换默认是
-                speed:3000,//速度默认4000
-                continuousScroll:true,//默认否
-                transitionType:'ease-in'
-            });
-
 
 
         })
     </script>
-<style>
-#slide1{height:300px;}
-</style>
 
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 
@@ -115,51 +114,43 @@ var option_config ={
  
 </script>
 
+
+
 </head>
 
 <body ontouchstart class="page-bg index">
+
+
+
 	<header>
+
+
 		<div class="weui-header"> 
-			<div class="weui-header-left"><img alt="Brand" src="img/logo.png"></div>
+			<div class="weui-header-left"><img alt="logo" src="img/logo.png"></div>
 			
 			<div class="weui-header-right">
-				<div class="icon icon-81 f25 iblock" navbar-toggle></div>
+				<div class="icon hamburger-icon" sidebarjs-toggle></div>
 			</div> 
+			<a target="_blank" id="selected">
+				<div class="img"></div>
+				<div class="label"></div>
+			  </a>
 		</div>
 
-		<div class="weui-navs" navbar>
-			<ul>
-				<li><a href="#">工总简介</a></li>
-				<li><a href="#">工总荣誉</a></li>
-				<li><a href="#">服务平台</a></li>
-				<li><a href="#">工总动态</a></li>
-				<li><a href="#">通知公告</a></li>
-				<li><a href="#">会员服务</a></li>
-				<li><a href="#">入会申请</a></li>
-				<li><a href="#">联系我们</a></li>
-			</ul>
-		</div>
-		
-		<script >
-			$(function(){
-				$('.nav-item>a').on('click', function () {
-					$(".weui-navs ul ul li").removeClass('active');
-					$('.nav-item').children('ul').hide();
-					if ($(this).next().css('display') == "none") {
-						//展开
-						$('.nav-item').children('ul').hide();
-						$(this).next('ul').show();
-						$(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
-					} else {
-						//收缩
-						$(this).next('ul').hide();
-						$('.nav-item.nav-show').removeClass('nav-show');
-					}
-				});
-			})
-		
-			var sidebarjs = new SidebarJS('navbar');
-		</script>
+		<div sidebarjs>
+			<nav>
+			  <div>
+				<a href="#">工总简介</a>
+				<a href="#">工总荣誉</a>
+				<a href="#">服务平台</a>
+				<a href="#">工总动态</a>
+				<a href="#">通知公告</a>
+				<a href="#">会员服务</a>
+				<a href="#">入会申请</a>
+				<a href="#">联系我们</a>
+			  </div>
+			</nav>
+		  </div>
 		
 	</header>
 
