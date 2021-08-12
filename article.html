@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>深圳工业总会</title>
+    <meta name="description" content="深圳工业总会于2001年注册成立，是以服务于工业界为主的工商领域经济类社会团体。">
+	<meta name="keywords" content="深圳工业总会，深圳知名品牌，深圳工业大奖，" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<!--[if lt IE 9]>   
+	<script src="js/IE9.js"></script>   
+	<![endif]-->
+
+	<link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/weuix.css"/>
+
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
+    <script src="js/zepto.min.js"></script>
+    <script>
+        $(function(){
+       $(".weui-c-like .icon").click(function(){
+           if($(this).hasClass('on')) {
+               $(this).removeClass('on')
+           }else{
+               $(this).addClass('on') 
+           }
+       })
+
+        });
+
+    </script>
+
+	<!--百度统计Start-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "http://hm.baidu.com/hm.js?13632d3f98e0680c55e94a3fa871aef5";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<!--百度统计Over-->
+
+<script>
+var curl = encodeURIComponent(window.location.href.split('#')[0]);
+ $.ajax({
+     type: "GET",
+     url : "http://www.fszi.org/jssdk.php?url=" + curl,//替换网址，xxx根据自己jssdk文件位置修改
+     dataType:'jsonp',
+     success : function(data){
+        console.log(data)
+          wx.config({
+            debug:false,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['checkJsApi','updateAppMessageShareData','updateTimelineShareData']
+        });
+},
+    error:function(data){
+        console.log(JSON.stringify(data))
+    }
+});
+ 
+wx.ready(function () {
+var option_config ={
+        title: '深圳工业总会官网',
+        desc: '推动工业化进程',
+        link: 'http://www.fszi.org/mobile/',
+        imgUrl: 'http://www.fszi.org/mobile/img/wx-thumb.png',
+        success: function () {},
+        cancel: function () {}
+    };
+    wx.updateTimelineShareData(option_config);
+    wx.updateAppMessageShareData(option_config);
+});
+ 
+</script>
+
+</head>
+
+<body ontouchstart class="article">
+
+	<div class="weui-content">
+		<div class="weui-c-inner">
+	 		<div class="weui-c-content">
+		  		<h2 class="weui-c-title">9月24日，第十届五洲工业发展论坛将盛大开幕! </h2>
+				<div class="weui-c-meta">
+					<span class="weui-c-nickname"><a href="index.html">深圳工业总会</a></span>
+					<em class="weui-c-nickname">2021年7月21日</em>
+				</div>
+
+				<div class="weui-c-article">
+					<p><img src="img/con_pic1.jpg"></p>
+					<p>“五洲工业发展论坛”是由联合国工业发展组织、中国工业经济联合会、深圳市人民政府等机构指导，由深圳工业总会创办的开放性、国际化高端论坛。论坛以“纵论工业发展走势，构建新型工业体系”为宗旨，邀请国内外高层级经济专家、有影响力的企业家莅会发表演讲、展开高峰对话，把脉工业走势。作为辐射全国、接轨国际的开放性、国际化高端论坛，在推动工业化进程、促进区域经济发展方面发挥了重要作用。迄今已成功举办过九届。</p>
+					<p>随着新一轮科技革命和产业革命的浪潮席卷而来，特别是大数据、人工智能、移动互联网、云计算、5G等新一代信息技术的应用，人类进入数字经济时代。《中国数字经济发展白皮书》表明，2020年我国数字经济规模规模达到39.2万亿元，占GDP比重为38.6%，同比名义增长9.7%，数字经济在逆势中加速腾飞，有效支撑疫情防控和经济社会发展。党的十九届五中全会提出，要加快数字化发展，发展数字经济，推进数字产业化和产业数字化，推动数字经济和实体经济深度融合，打造具有国际竞争力的数字产业集群。由此可见，大力发展数字经济已上升为国家战略，数字经济正在成为驱动我国经济高质量发展的重要引擎。</p>
+					<p>本届论坛以“打造数字经济高地 引领高质量发展”为主题，论坛将邀请政府专家、知名学者、优秀企业家、媒体代表等，围绕以数字经济为主体的主导产业，聚焦以战略性新兴产业为主体的高科技产业，汇聚全球领先企业、权威机构、卓越领袖与前沿专家，共同探讨数字经济发展以及人工智能、工业互联网、大数据等如何赋能制造业，构建产业生态链、完善创新服务链，促进实体经济高质量发展。</p>
+				</div>
+			</div>
+
+			<div class="weui-c-tools">
+				<!-- <a href="javascript:;">阅读原文</a> -->
+				<div class="weui-c-readnum">阅读<span id="readnum">10万+</span></div>
+				<div class="weui-c-like">
+				   <i class="icon"></i>
+				   <span id="likenum">1001</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<div class="news_con">
+			<h4>喜欢此内容的人还喜欢</h4>
+			<div class="weui-news">
+				<ul class="weui-news-list">
+					<li class="weui-news-item">
+						<div class="weui-news-inner">
+							<a href="index.html" class="weui-media-box weui-media-box_appmsg">
+							<div class="weui-news-inners">
+								<div class="weui-news-text">
+									<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
+								</div>
+								<div class="weui-news-info">
+									<div class="weui-news-infoitem">
+										<span class="weui-news-left">深圳工业总会</span>
+									</div>
+									<div class="weui-news-infoitem">2021-02-14</div>
+								</div>
+							</div>
+							<div class="weui-news-media">
+								<img src="img/pic1.jpg">
+							</div>
+							</a>
+						</div>
+					</li>
+					<li class="weui-news-item">
+						<a href="#" class="weui-media-box weui-media-box_appmsg">
+						<div class="weui-news-inner">
+							<div class="weui-news-inners">
+								<div class="weui-news-text">
+									<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
+								</div>
+								<div class="weui-news-info">
+									<div class="weui-news-infoitem">
+										<span class="weui-news-left">深圳工业总会</span>
+									</div>
+									<div class="weui-news-infoitem">2021-02-14</div>
+								</div>
+							</div>
+							<div class="weui-news-media">
+								<img src="img/pic1.jpg">
+							</div>
+						</div>
+						</a>
+					</li>
+					<li class="weui-news-item">
+						<div class="weui-news-inner">
+							<a href="#" class="weui-media-box weui-media-box_appmsg">
+							<div class="weui-news-inners">
+								<div class="weui-news-text">
+									<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
+								</div>
+								<div class="weui-news-info">
+									<div class="weui-news-infoitem">
+										<span class="weui-news-left">深圳工业总会</span>
+									</div>
+									<div class="weui-news-infoitem">2021-02-14</div>
+								</div>
+							</div>
+							<div class="weui-news-media">
+								<img src="img/pic1.jpg">
+							</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="weui-footer">
+		<!-- <p class="weui-footer__links">
+			<a href="index.html" class="weui-footer__link">首页</a>
+		</p> -->
+		<p class="weui-footer__text">Copyright &copy; 深圳工业总会</p>
+		<p class="weui-footer__text">备案号：粤ICP备11065159号-5号</p>
+
+	</div>
+
+</body>
+
+
+</html>
