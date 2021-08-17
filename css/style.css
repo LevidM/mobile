@@ -27,6 +27,10 @@ header{
 
 }
 
+.weui-grid__icon {
+	width: 80% !important;
+	height: 80% !important;
+}
 
 .weui-header-left img{
 	max-width: 70%;
@@ -49,7 +53,7 @@ header{
 
 .index_icon{
 	margin: 2em 15px;
-	padding: 2em 1em;
+	padding: 1em;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0px 0px 5px #E3E3E3;
@@ -143,10 +147,11 @@ svg, svg symbol {
 	overflow: visible;
 }
 
-.i-large div { font-size: 4em; margin: 0 }
-.i-medium div { font-size: 2em; margin: 0 }
-.i-small div { font-size: 1.5em; margin: 0 }
+.i-large svg { font-size: 4em; margin: 0;}
+.i-medium svg { font-size: 2em; margin: 0; }
+.i-small svg { font-size: 1.5em; margin: 0; }
 
 .i-large,
 .i-medium,
 .i-small { max-width: 50em; margin: 0 auto 2em }
+

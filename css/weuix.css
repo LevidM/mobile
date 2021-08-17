@@ -4485,7 +4485,7 @@ box-sizing: border-box;
 [sidebarjs-background] {
     position: absolute;
     background:#fff;
-    opacity: 0;
+    opacity: 0.5;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
 
