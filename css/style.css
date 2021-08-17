@@ -143,10 +143,6 @@ footer{
 	color: #fff;
 }
 
-svg, svg symbol {
-	overflow: visible;
-}
-
 .i-large svg { font-size: 4em; margin: 0;}
 .i-medium svg { font-size: 2em; margin: 0; }
 .i-small svg { font-size: 1.5em; margin: 0; }
