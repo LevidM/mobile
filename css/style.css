@@ -151,3 +151,16 @@ footer{
 .i-medium,
 .i-small { max-width: 50em; margin: 0 auto 2em }
 
+.weui-navs{
+	background: none !important;
+}
+
+[sidebarjs-container] {
+	float: right;
+}
+
+[sidebarjs-container] ul{
+	margin-top: 1em;
+	padding-left: 2em;
+	padding-right: 3em;
+}
