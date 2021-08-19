@@ -52,10 +52,10 @@ header{
 }
 
 .index_icon{
-	margin: 2em 15px;
+	margin: 1.2em 15px;
 	padding: 1em;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 8px;
 	box-shadow: 0px 0px 5px #E3E3E3;
 	-webkit-box-shadow:: 0px 0px 5px #E3E3E3;
 	-moz-box-shadow: 0px 0px 5px #E3E3E3;	
@@ -93,18 +93,23 @@ footer{
 	text-align: center;
 }
 
+.news{
+	background-color: #f5f5f5;
+	margin: 1.2em 0;
+}
+
 /* 内容页 */
 
 
- .news{
+ .article .news{
 	 background-color: #f5f5f5;
 	 margin: 2em 0;
  }
 
  .news_con{
-	margin: 1em;
+	margin:0 15px;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 8px;
 	box-shadow: 0px 0px 5px #E3E3E3;
 	-webkit-box-shadow:: 0px 0px 5px #E3E3E3;
 	-moz-box-shadow: 0px 0px 5px #E3E3E3;	
@@ -118,17 +123,17 @@ footer{
 	 padding:.5rem .5rem 0 .5rem
  }
 
-.index .weui-news-item, .article .weui-news-item{
+.index .weui-news-item, .article .weui-news-item, .list_page .weui-news-item{
 	 padding-left: 0;
  }
 
-.index .weui-news-media, .article .weui-news-media{
+.index .weui-news-media, .article .weui-news-media, .list_page .weui-news-media{
 	 padding-right: 0;
  }
 
 .index .weui-news, .article .weui-news{
-	 border-bottom-left-radius: 10px;
-	 border-bottom-right-radius: 10px;
+	 border-bottom-left-radius: 8px;
+	 border-bottom-right-radius: 8px;
  }
 
  .i {
@@ -163,4 +168,15 @@ footer{
 	margin-top: 1em;
 	padding-left: 2em;
 	padding-right: 3em;
+}
+
+.list_page .weui-footer{
+	margin-top: 3em;
+}
+
+
+/* list_page */
+.pager2{
+	display: flex;
+	justify-content: center;
 }
