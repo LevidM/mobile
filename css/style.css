@@ -36,11 +36,27 @@ header{
 	max-width: 70%;
 }
 
+.weui-navs ul a:hover, .weui-navs ul a:focus {
+	background-color: #e4e4e7;
+	border-radius: 8px;
+}
+.weui-navs ul a:active {
+	background-color: #3fabf4;
+	border-radius: 8px;
+}
+
+.nav-item{
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
 .banner{
+
 	background-image: url(../img/banner_bg.png);
 	background-repeat:no-repeat;
 	background-size:100% 75%;
 	padding: 0 15px;
+
 }
 
 .banner_s{
@@ -167,8 +183,8 @@ footer{
 
 [sidebarjs-container] ul{
 	margin-top: 1em;
-	padding-left: 2em;
-	padding-right: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .list_page .weui-footer{
