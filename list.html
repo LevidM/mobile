@@ -17,6 +17,8 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 
     <script src="js/zepto.min.js"></script>
+	<script src="js/sidebar.js"></script>
+
     <script>
         $(function(){
        $(".weui-c-like .icon").click(function(){
@@ -84,12 +86,58 @@ var option_config ={
 
 <body ontouchstart class="list_page">
 
-	<div class="page-hd">
+	<!-- <div class="page-hd">
 		<h1 class="page-hd-title">
 			工总动态
 		</h1>
 		<div class="weui-c-nickname"><a href="index.html">深圳工业总会</a></div>
+	</div> -->
+
+	<div class="weui-header bg-blue"> 
+		<div class="weui-header-left"> <a class="icon icon-109 f-white" href="index.html">返回</a>  </div>
+		<h1 class="weui-header-title">工总动态</h1>
+		<div class="weui-header-right">
+			<div class="i-medium" navbar-toggle>        
+				<svg t="1629194796120" class="i" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3209" ><path d="M196.266667 277.333333h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133333s-17.066667-29.866667-38.4-29.866667H196.266667c-21.333333 0-34.133333 17.066667-34.133334 34.133334s12.8 29.866667 34.133334 29.866666zM827.733333 477.866667H196.266667c-17.066667 0-34.133333 12.8-34.133334 34.133333s12.8 34.133333 34.133334 34.133333h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133333s-17.066667-34.133333-38.4-34.133333zM827.733333 746.666667H196.266667c-17.066667 0-34.133333 12.8-34.133334 34.133333s12.8 29.866667 34.133334 29.866667h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133334s-17.066667-29.866667-38.4-29.866666z" fill="#ffffff" p-id="3210"></path></svg>
+			</div>
+		</div> 
 	</div>
+
+
+	<div class="weui-navs" navbar>
+		<ul>
+			<a href="article.html"><li class="nav-item">工总简介</li></a>
+			<a href="article.html"><li class="nav-item">工总荣誉</li></a>
+			<a href="article.html"><li class="nav-item">工总动态</li></a>
+			<a href="article.html"><li class="nav-item">通知公告</li></a>
+			<a href="public-service.html"><li class="nav-item">公共服务</li></a>
+			<a href="member-service.html"><li class="nav-item">会员服务</li></a>
+			<a href="article.html"><li class="nav-item">会员风采</li></a>
+			<a href="article.html"><li class="nav-item">入会申请</li></a>
+
+		</ul>
+	</div>
+	
+	<script >
+		$(function(){
+			$('.nav-item>a').on('click', function () {
+				$(".weui-navs ul ul li").removeClass('active');
+				$('.nav-item').children('ul').hide();
+				if ($(this).next().css('display') == "none") {
+					//展开
+					$('.nav-item').children('ul').hide();
+					$(this).next('ul').show();
+					$(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+				} else {
+					//收缩
+					$(this).next('ul').hide();
+					$('.nav-item.nav-show').removeClass('nav-show');
+				}
+			});
+		})
+	
+		var sidebarjs = new SidebarJS('navbar');
+	</script>
 
 	<div class="weui-news">
 		<ul class="weui-news-list">
@@ -233,6 +281,7 @@ var option_config ={
 		</p> -->
 		<p class="weui-footer__text">Copyright &copy; 深圳工业总会</p>
 		<p class="weui-footer__text">备案号：粤ICP备11065159号-5号</p>
+		<p class="weui-footer__text">电话：0755-83688772 &nbsp; &nbsp; 传真：0755-83688744</p>
 
 	</div>
 

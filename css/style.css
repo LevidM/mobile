@@ -65,6 +65,7 @@ header{
 
 .banner_s img{
 	width: 100%;
+	border-radius: 999999px;
 }
 
 .index_icon{
@@ -83,18 +84,18 @@ header{
 	justify-content: space-between;
 }
 
-.new_con_titel h3{
+.new_con_title h3{
     border-left: #3fabf4 .3em solid;
     padding-left: .4em;
     margin-top: 1em;
 }
 
 
-.new_con_titel span {
+.new_con_title span {
 	margin-top: 1.2em;
 }
 
-.new_con_titel span a{
+.new_con_title span a{
 	font-size: 14px;
 	color: #666;
 	padding-right: 1em;
@@ -206,6 +207,18 @@ footer{
     margin-bottom: .8em;
 }
 
-.public-service .weui-header-right{
+.weui-header-right{
 	top: 8px !important;
+}
+
+.weui-news-p {
+	min-height: .5em;
+}
+
+.bg-blue{
+	background-color: #3fabf4;
+}
+
+.weui-footer {
+    padding: 1em 0;
 }
