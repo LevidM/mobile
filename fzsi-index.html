@@ -313,66 +313,30 @@ var option_config ={
 				</div>
 				<div class="weui-news">
 					<ul class="weui-news-list">
+					
+						[e:loop={"select * from www_sfie_org_cn.phome_ecms_news where classid=116 order by id desc limit 3",3,24,1}]
+						
 						<li class="weui-news-item">
 							<div class="weui-news-inner">
-								<a href="[!--news.url--]skin/mobile/article.html" class="weui-media-box weui-media-box_appmsg">
+								<a class="weui-media-box weui-media-box_appmsg" href="<?=$bqsr[titleurl]?>">
 								<div class="weui-news-inners">
 									<div class="weui-news-text">
-										<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
+										<div class="weui-news-title"><?=$bqr[title]?></div>
 									</div>
 									<div class="weui-news-info">
 										<div class="weui-news-infoitem">
-											<span class="weui-news-left">深圳工业总会</span>
+											<span class="weui-news-left"><?=$bqr[befrom]?></span>
 										</div>
-										<div class="weui-news-infoitem">2021-02-14</div>
+										<div class="weui-news-infoitem"><?=date('y-m-d',$bqr[newstime])?></div>
 									</div>
 								</div>
 								<div class="weui-news-media">
-									<img src="[!--news.url--]skin/mobile/img/pic1.jpg">
+									<img src="<?=$bqr[titlepic]?>">
 								</div>
 								</a>
 							</div>
 						</li>
-						<li class="weui-news-item">
-							<a href="[!--news.url--]skin/mobile/article.html" class="weui-media-box weui-media-box_appmsg">
-							<div class="weui-news-inner">
-								<div class="weui-news-inners">
-									<div class="weui-news-text">
-										<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
-									</div>
-									<div class="weui-news-info">
-										<div class="weui-news-infoitem">
-											<span class="weui-news-left">深圳工业总会</span>
-										</div>
-										<div class="weui-news-infoitem">2021-02-14</div>
-									</div>
-								</div>
-								<div class="weui-news-media">
-									<img src="[!--news.url--]skin/mobile/img/pic1.jpg">
-								</div>
-							</div>
-							</a>
-						</li>
-						<li class="weui-news-item">
-							<div class="weui-news-inner">
-								<a href="[!--news.url--]skin/mobile/article.html" class="weui-media-box weui-media-box_appmsg">
-								<div class="weui-news-inners">
-									<div class="weui-news-text">
-										<div class="weui-news-title">Flutter 是 Google 用以帮助开发者在 Android 和 iOS 两个平台，同时开发高质量原生应用的全新移动 UI 框架</div>
-									</div>
-									<div class="weui-news-info">
-										<div class="weui-news-infoitem">
-											<span class="weui-news-left">深圳工业总会</span>
-										</div>
-										<div class="weui-news-infoitem">2021-02-14</div>
-									</div>
-								</div>
-								<div class="weui-news-media">
-									<img src="[!--news.url--]skin/mobile/img/pic1.jpg">
-								</div>
-								</a>
-							</div>
-						</li>
+						[/e:loop]
 					</ul>
 				</div>
 			</div>
