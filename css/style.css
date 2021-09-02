@@ -222,3 +222,11 @@ footer{
 .weui-footer {
     padding: 1em 0;
 }
+
+.weui-media-box_appmsg{
+	width: 100%;
+}
+
+.weui-news-media img{
+	border-radius: 4px;
+}
