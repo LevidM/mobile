@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>深圳工业总会</title>
+    <meta name="description" content="深圳工业总会于2001年注册成立，是以服务于工业界为主的工商领域经济类社会团体。">
+	<meta name="keywords" content="深圳工业总会，深圳知名品牌，深圳工业大奖，" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<!--[if lt IE 9]>   
+	<script src="[!--news.url--]skin/mobile/js/IE9.js"></script>   
+	<![endif]-->
+
+	<link rel="stylesheet" href="[!--news.url--]skin/mobile/css/weui.css"/>
+    <link rel="stylesheet" href="[!--news.url--]skin/mobile/css/weuix.css"/>
+
+	<link href="[!--news.url--]skin/mobile/css/style.css" type="text/css" rel="stylesheet" media="all">
+
+    <script src="[!--news.url--]skin/mobile/js/zepto.min.js"></script>
+    <script>
+        $(function(){
+       $(".weui-c-like .icon").click(function(){
+           if($(this).hasClass('on')) {
+               $(this).removeClass('on')
+           }else{
+               $(this).addClass('on') 
+           }
+       })
+
+        });
+
+    </script>
+
+	<!--百度统计Start-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "http://hm.baidu.com/hm.js?13632d3f98e0680c55e94a3fa871aef5";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<!--百度统计Over-->
+
+<script>
+var curl = encodeURIComponent(window.location.href.split('#')[0]);
+ $.ajax({
+     type: "GET",
+     url : "http://www.fszi.org/jssdk.php?url=" + curl,//替换网址，xxx根据自己jssdk文件位置修改
+     dataType:'jsonp',
+     success : function(data){
+        console.log(data)
+          wx.config({
+            debug:false,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['checkJsApi','updateAppMessageShareData','updateTimelineShareData']
+        });
+},
+    error:function(data){
+        console.log(JSON.stringify(data))
+    }
+});
+ 
+wx.ready(function () {
+var option_config ={
+        title: '深圳工业总会官网',
+        desc: '推动工业化进程',
+        link: 'http://www.fszi.org/mobile/',
+        imgUrl: '[!--news.url--]skin/mobile/img/wx-thumb.png',
+        success: function () {},
+        cancel: function () {}
+    };
+    wx.updateTimelineShareData(option_config);
+    wx.updateAppMessageShareData(option_config);
+});
+ 
+</script>
+
+</head>
+
+<body ontouchstart class="article">
+
+	<div class="weui-content">
+		<div class="weui-c-inner">
+	 		<div class="weui-c-content">
+		  		<h2 class="weui-c-title">[!--pagetitle--]</h2>
+				<div class="weui-c-meta">
+					<span class="weui-c-nickname"><a href="[!--news.url--]">深圳工业总会</a></span>
+					<em class="weui-c-nickname">[!--newstime--]</em>
+				</div>
+
+				<div class="weui-c-article">
+					[!--newstext--]
+				</div>
+			</div>
+
+			<div class="weui-c-tools">
+				<!-- <a href="javascript:;">阅读原文</a> -->
+				<div class="weui-c-readnum">阅读<span id="readnum">10万+</span></div>
+				<div class="weui-c-like">
+				   <i class="icon"></i>
+				   <span id="likenum">1001</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<div class="news_con">
+			<h4>喜欢此内容的人还喜欢</h4>
+			<div class="weui-news">
+				<ul class="weui-news-list">
+					[e:loop={"select * from www_sfie_org_cn.phome_ecms_news where classid=102 order by id desc limit 3",3,24,1}]
+						
+						<li class="weui-news-item">
+							<div class="weui-news-inner">
+								<a class="weui-media-box weui-media-box_appmsg" href="<?=$bqsr[titleurl]?>">
+								<div class="weui-news-inners">
+									<div class="weui-news-text">
+										<div class="weui-news-title"><?=$bqr[title]?></div>
+									</div>
+									<div class="weui-news-info">
+										<div class="weui-news-infoitem">
+											<span class="weui-news-left">深圳工业总会</span>
+										</div>
+										<div class="weui-news-infoitem"><?=date('y-m-d',$bqr[newstime])?></div>
+									</div>
+								</div>
+								<div class="weui-news-media">
+									<img src="<?=$bqr[titlepic]?>">
+								</div>
+								</a>
+							</div>
+						</li>
+						[/e:loop]
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="weui-footer">
+		<!-- <p class="weui-footer__links">
+			<a href="index.html" class="weui-footer__link">首页</a>
+		</p> -->
+		<p class="weui-footer__text">Copyright &copy; 深圳工业总会</p>
+		<p class="weui-footer__text">备案号：粤ICP备11065159号-5号</p>
+		<p class="weui-footer__text">电话：0755-83688772 &nbsp; &nbsp; 传真：0755-83688744</p>
+
+	</div>
+
+</body>
+
+
+</html>
