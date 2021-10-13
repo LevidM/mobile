@@ -236,3 +236,57 @@ footer{
 	border-radius: 4px;
 	height: 100%;
 }
+
+/* 工总简介-最高顾问 */
+
+.about-leader-title{
+	color: #cc0000;
+	font-weight: bolder;
+	font-size: large;
+	margin-bottom: .5em;
+}
+
+.about-leader-title2{
+	color: #666;
+	font-weight: bolder;
+	margin-bottom: .5em;
+}
+
+
+.about-leader-medias{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.about-leader-medialist{
+	width: 28%;
+}
+
+.about-leader-medialist img{
+	width:100%;
+  	max-width:100%;
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.about-leader-medialist p{
+	text-align: center;
+	text-indent: 0em;
+	font-size: .9em;
+	margin-bottom: .5em;
+	
+}
+
+.about-leader-medias span{
+	display: block;
+	text-align: center;
+	color: #999;
+	font-size: small;
+}
+
+.about-culture p{
+	text-indent: 0em;
+}

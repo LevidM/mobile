@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>深圳工业总会</title>
+    <meta name="description" content="深圳工业总会于2001年注册成立，是以服务于工业界为主的工商领域经济类社会团体。">
+	<meta name="keywords" content="深圳工业总会，深圳知名品牌，深圳工业大奖，" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+	<!--[if lt IE 9]>   
+	<script src="js/IE9.js"></script>   
+	<![endif]-->
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/weuix.css"/>
+
+
+
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swipe.js"></script>
+	<script src="js/zepto.weui.js"></script>
+
+	<script src="js/sidebar.js"></script>
+
+
+    <script>
+        $(function(){
+            $('#slide1').swipeSlide({
+                autoSwipe:true,//自动切换默认是
+                speed:3000,//速度默认4000
+                continuousScroll:true,//默认否
+                transitionType:'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+                lazyLoad:true,//懒加载默认否
+                firstCallback : function(i,sum,me){
+                    me.find('.dot').children().first().addClass('cur');
+                },
+                callback : function(i,sum,me){
+                    me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+                }
+            });
+
+            $('#slide2').swipeSlide({
+                autoSwipe:true,//自动切换默认是
+                speed:3000,//速度默认4000
+                continuousScroll:true,//默认否
+                transitionType:'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+                lazyLoad:true,//懒加载默认否
+                firstCallback : function(i,sum,me){
+                    me.find('.dot').children().first().addClass('cur');
+                },
+                callback : function(i,sum,me){
+                    me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+                }
+            });
+
+
+        })
+    </script>
+
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
+	<!--//end-smoth-scrolling-->
+	<!--百度统计Start-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "http://hm.baidu.com/hm.js?13632d3f98e0680c55e94a3fa871aef5";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<!--百度统计Over-->
+
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
+<script>
+var curl = encodeURIComponent(window.location.href.split('#')[0]);
+ $.ajax({
+     type: "GET",
+     url : "http://www.fszi.org/jssdk.php?url=" + curl,//替换网址，xxx根据自己jssdk文件位置修改
+     dataType:'jsonp',
+     success : function(data){
+        console.log(data)
+          wx.config({
+            debug:false,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['checkJsApi','updateAppMessageShareData','updateTimelineShareData']
+        });
+},
+    error:function(data){
+        console.log(JSON.stringify(data))
+    }
+});
+ 
+wx.ready(function () {
+var option_config ={
+        title: '深圳工业总会官网',
+        desc: '推动工业化进程',
+        link: 'http://www.fszi.org/mobile/',
+        imgUrl: 'http://www.fszi.org/mobile/img/wx-thumb.png',
+        success: function () {},
+        cancel: function () {}
+    };
+    wx.updateTimelineShareData(option_config);
+    wx.updateAppMessageShareData(option_config);
+});
+ 
+</script>
+
+
+
+</head>
+
+<body ontouchstart class="article">
+
+
+		<div class="weui-header bg-blue"> 
+			<div class="weui-header-left"> <a class="icon icon-109 f-white" href="index.html">返回</a>  </div>
+			<h1 class="weui-header-title">深圳工业总会简介</h1>
+			<div class="weui-header-right">
+				<div class="i-medium" navbar-toggle>        
+					<svg t="1629194796120" class="i" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3209" ><path d="M196.266667 277.333333h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133333s-17.066667-29.866667-38.4-29.866667H196.266667c-21.333333 0-34.133333 17.066667-34.133334 34.133334s12.8 29.866667 34.133334 29.866666zM827.733333 477.866667H196.266667c-17.066667 0-34.133333 12.8-34.133334 34.133333s12.8 34.133333 34.133334 34.133333h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133333s-17.066667-34.133333-38.4-34.133333zM827.733333 746.666667H196.266667c-17.066667 0-34.133333 12.8-34.133334 34.133333s12.8 29.866667 34.133334 29.866667h635.733333c17.066667 0 34.133333-12.8 34.133333-34.133334s-17.066667-29.866667-38.4-29.866666z" fill="#ffffff" p-id="3210"></path></svg>
+				</div>
+			</div> 
+		</div>
+
+
+		<div class="weui-navs" navbar>
+			<ul>
+				<a href="article.html"><li class="nav-item">工总简介</li></a>
+				<a href="article.html"><li class="nav-item">工总荣誉</li></a>
+				<a href="article.html"><li class="nav-item">工总动态</li></a>
+				<a href="article.html"><li class="nav-item">通知公告</li></a>
+				<a href="public-service.html"><li class="nav-item">公共服务</li></a>
+				<a href="member-service.html"><li class="nav-item">会员服务</li></a>
+				<a href="article.html"><li class="nav-item">会员风采</li></a>
+				<a href="article.html"><li class="nav-item">入会申请</li></a>
+
+			</ul>
+		</div>
+		
+		<script >
+			$(function(){
+				$('.nav-item>a').on('click', function () {
+					$(".weui-navs ul ul li").removeClass('active');
+					$('.nav-item').children('ul').hide();
+					if ($(this).next().css('display') == "none") {
+						//展开
+						$('.nav-item').children('ul').hide();
+						$(this).next('ul').show();
+						$(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+					} else {
+						//收缩
+						$(this).next('ul').hide();
+						$('.nav-item.nav-show').removeClass('nav-show');
+					}
+				});
+			})
+		
+			var sidebarjs = new SidebarJS('navbar');
+		</script>
+
+
+	<main>
+
+	<div class="weui-content">
+		<div class="weui-c-inner">
+	 		<div class="weui-c-content">
+		  		<h2 class="weui-c-title">深圳工业总会简介</h2>
+				<div class="weui-c-meta">
+					<span class="weui-c-nickname"><a href="http://www.fszi.org/mobile/">深圳工业总会</a></span>
+					<em class="weui-c-nickname">2021-09-10</em>
+				</div>
+
+				<div class="weui-c-article">
+					<p><img alt="" src="http://www.fszi.org/mobile/d/file/p/2021/10-09/6097c9705a91870e8a397c51c765180d.png" /></p>
+<p>深圳工业总会于2001年注册成立，是以服务于工业界为主的工商领域经济类社会团体。</p>
+<p>二十年来，肩负推动工业化进程伟大使命，构建面向广大企业的公共服务和面向会员的专项服务体系，创办一系列主题鲜明、创意新颖、成效显著、影响深远的服务平台，赢得广泛赞誉和荣耀。</p>
+<p>先后创办了一批配合政府、面向企业、推进创新、培育品牌的公共服务平台：深圳知名品牌培育评价、深圳国际品牌周、中国品牌价值500强榜单（国际合作项目）、粤港澳大湾区质量高峰论坛、粤港澳大湾区企业创新力榜单、五洲工业发展论坛、深圳企业创新纪录审定发布、深圳工业大奖、深圳百优工匠等。</p>
+<p>深圳工业总会积极配合政府部门开展助力制造业优质企业高质量发展工作：受国家工信部、中国工经联委托，深圳工业总会与市工信局联合发文，征集推荐深圳市全国制造业单项冠军和遴选深圳市制造业单项冠军，截至目前，深圳市获评全国制造业单项冠军的企业达到28家，获评总量占广东省获评企业54%。按照市中小企业服务局要求，设立深圳市中小企业公共服务示范平台，为国家级专精特新&ldquo;小巨人&rdquo;企业、省级专精特新中小企业提供一对一专业服务；配合市工信局，开展编制《深圳市创新产品目录》等。</p>
+<p>深圳工业总会持续20年开展深圳品牌建设活动，遵照深府〔2003〕64号文件的职责分工，积极组织开展&ldquo;深圳知名品牌&rdquo;培育评价活动，通过专家现场辅导、品牌人才培育、品牌标准宣贯、媒体矩阵宣传等推动深圳上万家企业做品牌、创名牌。发布《深圳知名品牌评价规范》团体标准；认定发布&ldquo;国际信誉品牌&rdquo;、深圳知名品牌&middot;欧洲原产、日本原产；发布品牌价值榜单；举办品牌建设高端论坛；搭建&ldquo;品牌云展馆&rdquo;等；推出中小企业&ldquo;十四五&rdquo;品牌建设行动纲要，助力企业转型升级高质量发展。前十八届&ldquo;深圳知名品牌&rdquo;培育评价活动共评选产生847个&ldquo;深圳知名品牌&rdquo;，仅占全市企业总数的万分之四，销售额合计占全市销售总额的49.82%、纳税额占41.95%、出口额占35.39%。&ldquo;华为&rdquo;等59个深圳知名品牌企业位列国际细分市场前三位；&ldquo;迈瑞&rdquo;等158个深圳知名品牌企业位列国内细分市场占有率第一。</p>
+<p>自2017年开始，连续五年联合十一区政府（新区、合作区管委会）及相关机构举办&ldquo;深圳国际品牌周&rdquo;，并作为&ldquo;中国品牌日深圳地方特色活动&rdquo;纳入国家年度&ldquo;中国品牌日&rdquo;活动序列，每届举办20多场主题活动，吸引线上线下参与人数超百万，充分展示深圳品牌建设先行示范成果，已经成为具有国际影响的重大品牌活动。</p>
+<p>深圳工业总会秉承&ldquo;会员的困难就是我们的任务，会员的成绩就是我们的荣耀&rdquo;的宗旨，开展政企交流、法律保护、企业调研、区域合作、会员联谊、专题培训、市场拓展、资讯传播等专项服务。</p>
+<p>深圳工业总会系全国首批5A资质社团，是全国首家与联合国工业发展组织建立非政府机构合作关系的社团组织，是全国唯一把品牌建设活动推向国际社会并获得积极响应的社团组织，是全国唯一获政府质量奖的社团组织，是全国工业经济领域唯一获&ldquo;全国先进社会组织&rdquo;称号的社团组织，是深圳市唯一获市委、市政府授予&ldquo;文明单位&rdquo;荣誉称号的社团组织。</p>		
+
+
+<p>&nbsp;</p>
+
+	
+					<div class="about-leader">
+						<div class="about-leader-title">最高顾问</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/58521397530240.jpg">
+								<p>林宗堂</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="about-leader">
+						<div class="about-leader-title">荣誉主席</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/70101397530240.jpg">
+								<p>李灏</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/12831397530240.jpg">
+								<p>黄华华</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/images/organizer/p1.jpg">
+								<p>周俊明</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title">首席学家</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/56081397530240.jpg">
+								<span>首席战略学家</span>
+								<p>刘人怀</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/37801397530240.jpg">
+								<span>首席科学家</span>
+								<p>冯冠平</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2016-06-03/d5fc85d93792a9d0b4f4db94a69dba3a.jpg">
+								<span>首席经济学家</span>
+								<p>陈家乐</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/56471397530240.jpg">
+								<span>首席管理学家</span>
+								<p>黄英忠</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/19111397530240.jpg">
+								<span>首席医学家</span>
+								<p>许清祥</p>
+							</div>
+
+							<div class="about-leader-medialist">
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title">荣誉会长</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/88771397530240.jpg">
+								<p>周 義</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/56161397530240.jpg">
+								<p>郭荣俊</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/26481397530240.jpg">
+								<p>陈思平</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2016-06-03/bbb153d09cb471d28aef54e9e11cf8d1.jpg">
+								<p>刘胜利</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2017-02-08/85f369300837678be312320732f50416.jpg">
+								<p>张效民</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/8281397530240.jpg">
+								<p>许 扬</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/63571397530240.jpg">
+								<p>周长瑚</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/94731397530240.jpg">
+								<p>廖军文</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/1601397530240.jpg">
+								<p>李连和</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title">主席团成员</div>
+						<div class="about-leader-title2">执行主席：</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/43231397530240.jpg">
+								<p>吴光权</p>
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title2">常务主席：</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/29231397530240.jpg">
+								<p>王肇文</p>
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title2">主席：</div>
+						<div class="about-leader-medias">
+                            <div class="about-leader-medialist">
+                                <img alt="" src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/39821397530240.jpg" />
+                                <p>蔡正富</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="" src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/63451397530240.jpg" />
+                                <p>徐航</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="" src="http://www.fszi.org/e/data/ecmseditor/ueditor/php/upload/82091397530240.jpg" />
+                                <p>王宏晖</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="" src="http://www.fszi.org/images/organizer/n2.jpg" />
+                                <p>杨 洪</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="吴光胜.jpg" src="http://www.fszi.org/d/file/organizer/2017-02-08/94f625cf1ebbb5ad535cd5e597bb6128.jpg" />
+                                <p>吴光胜</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="夏妍娜.jpg" src="http://www.fszi.org/d/file/organizer/2017-02-08/c498db44af0bd5982d2ac3ecb273233c.jpg" />
+                                <p>夏妍娜</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="陈竽伶" src="http://www.fszi.org/images/organizer/p4.jpg"/>
+                                <p>陈竽伶</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="郭蕴川" src="http://www.fszi.org/images/organizer/p5.jpg"/>
+                                <p>郭蕴川</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="李迪初" src="http://www.fszi.org/images/organizer/p11.jpg"/>
+                                <p>李迪初</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="陈宏良" src="http://www.fszi.org/images/organizer/p12.jpg"/>
+                                <p>陈宏良</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="高书林" src="http://www.fszi.org/images/organizer/p13.jpg"/>
+                                <p>高书林</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="贺臻" src="http://www.fszi.org/images/organizer/p14.jpg"/>
+                                <p>贺臻</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="吴富贵" src="http://www.fszi.org/images/organizer/p16.jpg"/>
+                                <p>吴富贵</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                                <img alt="黄勇峰" src="http://www.fszi.org/images/organizer/p17.jpg"/>
+                                <p>黄勇峰</p>
+                            </div>
+                            <div class="about-leader-medialist">
+                            </div>
+						</div>
+					</div>
+
+					
+					<div class="about-leader">
+						<div class="about-leader-title2">执行主席：</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/images/organizer/p7.jpg">
+								<p>吴 丽</p>
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+							<div class="about-leader-medialist">
+							</div>
+						</div>
+					</div>
+
+					<div class="about-leader">
+						<div class="about-leader-title">国际顾问</div>
+						<div class="about-leader-medias">
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2016-06-03/f29aefb53ada9ec1e517ecae8765b878.jpg">
+								<span>高级国际合作顾问</span>								
+								<span>美国休斯顿前市长</span>
+								<p>利·布朗博士</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2016-06-03/350afd43bdc7f85bcebf2d1b8dbaf0fa.jpg">
+								<span>高级国际技术顾问</span>
+								<span>德国3D-MID联合会主席</span>
+								<p>约尔格·弗兰柯教授</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/d/file/organizer/2016-06-03/8f6bea8815ce27f46e87ec1cfdd43c98.jpg">
+								<span>高级国际经济顾问</span>
+								<span>西班牙证交所主席</span>
+								<p>布拉斯·卡尔萨达博士</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/images/organizer/p8.jpg">
+								<span>以色列高级经济顾问</span>
+								<span>以色列驻广州总领事馆商务经济领事</span>
+								<p>海诺娅</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/images/organizer/p9.jpg">
+								<span>创新创业高级指导顾问</span>
+								<span>以色列全球卓越教育中心董事长</span>
+								<p>Hezki Arieli教授</p>
+							</div>
+							<div class="about-leader-medialist">
+								<img src="http://www.fszi.org/images/organizer/p10.jpg">
+								<span>国际工业竞争力高级顾问</span>
+								<span>西班牙政府企业家协会主席</span>
+								<p>卡萨多博士</p>
+							</div>
+						</div>
+					</div>
+
+					<p>&nbsp;</p>
+
+					<div class="about-culture">
+						<div class="about-leader-title">使命 愿景 价值观&mdash;&mdash;</div>
+						<p><strong>（一）使&nbsp;&nbsp;命：</strong>推动工业化进程。</p>
+						<p><strong>（二）愿&nbsp;&nbsp;景：</strong>成为国际坐标系中工业领域颇具影响力的社会组织。</p>
+						<p><strong>（五）价 值 观：</strong>祥和、效率、服务、合作</p>
+						<p>促进品牌建设，优化产业结构，推动社会进步。</p>
+						<p><strong>（四）战略方向：</strong>永远屹立于世界NGO之林！</p>
+						<p class="about-value-indent-1">让深圳工总的旗帜永远飘扬在深圳特区的上空，</p>
+						<p class="about-value-indent-1">让深圳工总的身影永远活跃在中国经济的舞台，</p>
+						<p class="about-value-indent-1">让深圳工总的形象永远闪现在国际交流的前沿。</p>
+						<p><strong>（五）战略定位：</strong>瞄准世界经济制高点，站在深圳工业领跑线。</p>
+						<p><strong>（六）战略目标：</strong>打造国际信誉品牌，引领中国制造向中国创造转变。</p>
+
+						<p>&nbsp;</p>
+
+						<div class="about-leader-title">我们应做到&mdash;&mdash;</div>
+						<p><strong>◆ 服务理念：</strong>用我们的真诚，取得会员的信任；</p>
+						<p class="about-value-indent-1">以我们的业绩，取得社会的认同。</p>
+						<p class="about-value-indent-1">会员的困难，就是我们的任务！</p>
+						<p class="about-value-indent-1">会员的成就，就是我们的荣耀！</p>
+						<p><strong>◆ 思想风貌：</strong>有理想、有激情、有智慧、有韧劲。</p>
+						<p><strong>◆ 行为准则：</strong>用心做事，以智求成。</p>
+						<p class="about-value-indent-1">没有理由不能做，没有理由不会做，没有理由做不好。</p>
+						<p><strong>◆ 团队风格：</strong>打不烂、拖不垮、冲得上、顶得住、拿得下。</p>
+						<p><strong>◆ 行动口号：</strong>未来靠实干，工总勇向前。</p>
+						<p>&nbsp;</p>
+					</div>
+		
+				</div>
+			</div>
+
+			<div class="weui-c-tools">
+				<!-- <a href="javascript:;">阅读原文</a> -->
+				<div class="weui-c-readnum">阅读<span id="readnum">10万+</span></div>
+				<div class="weui-c-like">
+				   <i class="icon"></i>
+				   <span id="likenum"><script src=http://www.fszi.org/mobile/e/public/ViewClick/?classid=1&id=733&addclick=1></script></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<div class="news_con">
+			<h4>喜欢此内容的人还喜欢</h4>
+			<div class="weui-news">
+				<ul class="weui-news-list">
+											
+						<li class="weui-news-item">
+							<div class="weui-news-inner">
+								<a class="weui-media-box weui-media-box_appmsg" href="http://www.fszi.org/mobile/news/2021-10-02/768.html">
+								<div class="weui-news-inners">
+									<div class="weui-news-text">
+										<div class="weui-news-title">2021华南国际工业博览会圆满收官！</div>
+									</div>
+									<div class="weui-news-info">
+										<div class="weui-news-infoitem">
+											<span class="weui-news-left">深圳工业总会</span>
+										</div>
+										<div class="weui-news-infoitem">21-09-30</div>
+									</div>
+								</div>
+								<div class="weui-news-media">
+									<img src="http://www.fszi.org/mobile/d/file/p/2021/10-02/6cccb02364df185ee3a22860a5569f16.jpg">
+								</div>
+								</a>
+							</div>
+						</li>
+												
+						<li class="weui-news-item">
+							<div class="weui-news-inner">
+								<a class="weui-media-box weui-media-box_appmsg" href="http://www.fszi.org/mobile/news/2021-10-02/767.html">
+								<div class="weui-news-inners">
+									<div class="weui-news-text">
+										<div class="weui-news-title">“打造数字经济高地 引领高质量发展” 第十届“五洲工业发展论坛”隆重举行!</div>
+									</div>
+									<div class="weui-news-info">
+										<div class="weui-news-infoitem">
+											<span class="weui-news-left">深圳工业总会</span>
+										</div>
+										<div class="weui-news-infoitem">21-09-29</div>
+									</div>
+								</div>
+								<div class="weui-news-media">
+									<img src="http://www.fszi.org/mobile/d/file/p/2021/10-02/6a1ffb8884abce81cc772cfc165eae66.jpg">
+								</div>
+								</a>
+							</div>
+						</li>
+												
+						<li class="weui-news-item">
+							<div class="weui-news-inner">
+								<a class="weui-media-box weui-media-box_appmsg" href="http://www.fszi.org/mobile/news/2021-10-02/766.html">
+								<div class="weui-news-inners">
+									<div class="weui-news-text">
+										<div class="weui-news-title">第五届深圳工业大奖颁奖典礼成功举行！</div>
+									</div>
+									<div class="weui-news-info">
+										<div class="weui-news-infoitem">
+											<span class="weui-news-left">深圳工业总会</span>
+										</div>
+										<div class="weui-news-infoitem">21-09-29</div>
+									</div>
+								</div>
+								<div class="weui-news-media">
+									<img src="http://www.fszi.org/mobile/d/file/p/2021/10-02/70160e82a206162739998f9f698ab3c2.jpg">
+								</div>
+								</a>
+							</div>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</main>
+
+	<div class="weui-footer">
+		<!-- <p class="weui-footer__links">
+			<a href="index.html" class="weui-footer__link">首页</a>
+		</p> -->
+		<p class="weui-footer__text">Copyright &copy; 深圳工业总会</p>
+		<p class="weui-footer__text">备案号：粤ICP备11065159号-5号</p>
+		<p class="weui-footer__text">电话：0755-83688772 &nbsp; &nbsp; 传真：0755-83688744</p>
+
+	</div>
+
+
+</body>
+
+
+</html>
